@@ -14,8 +14,7 @@ const cookieParser = require("cookie-parser");
 const cors = require("cors");
 
 const FRONTEND_URL =
-  process.env.ORIGIN ||
-  "https://66d9bce851bc25179cf3d09d--wildfind.netlify.app/";
+  process.env.ORIGIN || "https://wildfind-final-project-ih.netlify.app/";
 
 // Middleware configuration
 module.exports = (app) => {
@@ -26,11 +25,7 @@ module.exports = (app) => {
   // controls a very specific header to pass headers from the frontend
   app.use(
     cors({
-      origin: [
-        FRONTEND_URL,
-        "https://wildfindserver.adaptable.app/",
-        "http://localhost:5173",
-      ],
+      origin: [FRONTEND_URL, "http://localhost:5173"],
     })
   );
 
