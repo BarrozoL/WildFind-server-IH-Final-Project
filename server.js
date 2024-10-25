@@ -6,3 +6,5 @@ const PORT = process.env.PORT || 3000;
 app.listen(PORT, "0.0.0.0", () => {
   console.log(`Server listening on http://localhost:${PORT}`);
 });
+
+//Changed port to 3000 and added "0.0.0.0" to match flyctl configs toml file
