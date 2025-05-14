@@ -14,7 +14,7 @@ const cookieParser = require("cookie-parser");
 const cors = require("cors");
 
 const FRONTEND_URL =
-  process.env.ORIGIN || "https://wildfind-final-project-ih.netlify.app";
+  process.env.ORIGIN || "https://wildfind-project.netlify.app";
 
 // Middleware configuration
 module.exports = (app) => {
@@ -28,7 +28,7 @@ module.exports = (app) => {
       origin: [
         FRONTEND_URL,
         "http://localhost:5173",
-        "https://wildfind-final-project-ih.netlify.app",
+        "https://wildfind-project.netlify.app",
       ],
     })
   );
